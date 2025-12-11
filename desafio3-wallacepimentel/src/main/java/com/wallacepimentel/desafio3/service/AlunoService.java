@@ -47,7 +47,7 @@ public class AlunoService {
     }
 
     //Criando lista de DTOs dos CRs para exibição
-    private List<CRAlunoDTO> listarCRdosAlunosEmDTO () {
+    public List<CRAlunoDTO> listarCRdosAlunosEmDTO () {
         return this.alunos
                 .values()
                 .stream()

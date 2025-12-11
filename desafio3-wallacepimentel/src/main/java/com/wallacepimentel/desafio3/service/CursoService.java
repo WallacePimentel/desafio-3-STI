@@ -48,7 +48,7 @@ public class CursoService {
     }
 
     //Criando lista de DTOs dos CRs para exibição
-    private List<CRCursoDTO> listarCRdosAlunosEmDTO () {
+    public List<CRCursoDTO> listarCRdoCursoEmDTO () {
         return this.cursos
                 .values()
                 .stream()
