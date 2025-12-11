@@ -1,8 +1,13 @@
 package com.wallacepimentel.desafio3.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.util.ArrayList;
 import java.util.List;
 
+@Getter
+@Setter
 public class AlunoModel {
     private final String matriculaAluno;
     private String codigoCurso;

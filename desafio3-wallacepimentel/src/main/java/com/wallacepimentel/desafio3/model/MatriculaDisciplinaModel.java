@@ -1,5 +1,10 @@
 package com.wallacepimentel.desafio3.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
 public class MatriculaDisciplinaModel {
     private String matriculaAluno;
     private String codigoDisciplina;
