@@ -2,9 +2,11 @@ package com.wallacepimentel.desafio3.service;
 
 import com.wallacepimentel.desafio3.model.AlunoModel;
 import com.wallacepimentel.desafio3.model.MatriculaDisciplinaModel;
+import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
 
+@Service
 public class AlunoService {
 
     private final HashMap<String, AlunoModel> alunos = new HashMap<>();
