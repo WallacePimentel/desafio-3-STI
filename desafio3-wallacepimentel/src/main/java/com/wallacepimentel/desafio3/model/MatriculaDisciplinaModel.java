@@ -8,7 +8,7 @@ import lombok.Setter;
 public class MatriculaDisciplinaModel {
     private String matriculaAluno;
     private String codigoDisciplina;
-    private int nota;
+    private double nota;
     private String anoSemestre;
 
     //Inicializando a nota com 0 para caso de abandono
