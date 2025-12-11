@@ -1,4 +1,4 @@
 package com.wallacepimentel.desafio3.DTO;
 
-public class CrAlunoDTO {
+public record CrAlunoDTO(String matriculaAluno, double alunoCR) {
 }
