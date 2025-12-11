@@ -1,10 +1,12 @@
 package com.wallacepimentel.desafio3.service;
 
+import com.wallacepimentel.desafio3.DTO.CRAlunoDTO;
 import com.wallacepimentel.desafio3.model.AlunoModel;
 import com.wallacepimentel.desafio3.model.MatriculaDisciplinaModel;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
+import java.util.List;
 
 @Service
 public class AlunoService {
@@ -42,5 +44,14 @@ public class AlunoService {
         }
 
         return somatorioNotas / totalCargaHoraria;
+    }
+
+    //Criando lista de DTOs dos CRs para exibição
+    private List<CRAlunoDTO> listarCRdosAlunosEmDTO () {
+        return this.alunos
+                .values()
+                .stream()
+                .map(aluno -> new CRAlunoDTO(aluno.getMatriculaAluno(), calcularCRAluno(aluno)))
+                .toList();
     }
 }
