@@ -16,4 +16,8 @@ public class CursoModel {
         this.codigoCurso = codigoCurso;
         this.alunosDoCurso = new ArrayList<>();
     }
+
+    public void adicionarAluno(AlunoModel aluno) {
+        this.alunosDoCurso.add(aluno);
+    }
 }
