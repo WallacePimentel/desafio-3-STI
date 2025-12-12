@@ -1,7 +1,7 @@
 # Sistema de Cálculo de CR (Coeficiente de Rendimento)
 
 Projeto de um ambiente colegial com registro de alunos, cursos e 
-disciplinas, implementado para o Desafio 3 do processo de estágio STI.
+disciplinas desenvolvido em **Java** com **SpringBoot**, implementado para o Desafio 3 do processo de estágio STI.
 ## Como Executar
 
 ```bash
@@ -10,7 +10,8 @@ mvn spring-boot:run
 
 ## Interface Web Simples de Exemplo
 
-Após executar a aplicação, acesse em seu navegador:
+Após executar a aplicação, você poderá vizualizar a listagem dos 
+CRs dos alunos e dos cursos no próprio **Console** ou acessando em seu navegador:
 
 - `http://localhost:8080/`
 
