@@ -17,6 +17,7 @@ public class CRAlunoControler {
         this.alunoService = alunoService;
     }
 
+    @GetMapping("/cr")
     public List<CRAlunoDTO> listarCRdosAlunos () {
         return this.alunoService.listarCRdosAlunosEmDTO();
     }
