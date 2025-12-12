@@ -1,10 +1,13 @@
-package com.wallacepimentel.desafio3.service;
+package com.wallacepimentel.desafio3.utils;
 
 import com.wallacepimentel.desafio3.model.AlunoModel;
 import com.wallacepimentel.desafio3.model.CursoModel;
 import com.wallacepimentel.desafio3.model.DisciplinaModel;
 import com.wallacepimentel.desafio3.model.MatriculaDisciplinaModel;
-import com.wallacepimentel.desafio3.utils.Key;
+import com.wallacepimentel.desafio3.service.AlunoService;
+import com.wallacepimentel.desafio3.service.CursoService;
+import com.wallacepimentel.desafio3.service.DisciplinaService;
+import com.wallacepimentel.desafio3.service.MatriculaDisciplinaService;
 import org.springframework.core.io.ClassPathResource;
 import org.springframework.stereotype.Service;
 
@@ -13,14 +16,14 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 @Service
-public class CSVPreloaderService {
+public class LeitorCSV {
     
     private final AlunoService alunoService;
     private final CursoService cursoService;
     private final DisciplinaService disciplinaService;
     private final MatriculaDisciplinaService matriculaDisciplinaService;
     
-    public CSVPreloaderService(AlunoService alunoService, CursoService cursoService, DisciplinaService disciplinaService, MatriculaDisciplinaService matriculaDisciplinaService) {
+    public LeitorCSV(AlunoService alunoService, CursoService cursoService, DisciplinaService disciplinaService, MatriculaDisciplinaService matriculaDisciplinaService) {
         this.alunoService = alunoService;
         this.cursoService = cursoService;
         this.disciplinaService = disciplinaService;
