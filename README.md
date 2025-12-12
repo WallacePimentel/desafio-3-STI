@@ -8,7 +8,7 @@ disciplinas desenvolvido em **Java** com **SpringBoot**, implementado para o Des
 mvn spring-boot:run
 ```
 
-## Interface Web Simples de Exemplo
+## Console e Interface Web Simples de Exemplo
 
 Após executar a aplicação, você poderá vizualizar a listagem dos 
 CRs dos alunos e dos cursos no próprio **Console** ou acessando em seu navegador:
