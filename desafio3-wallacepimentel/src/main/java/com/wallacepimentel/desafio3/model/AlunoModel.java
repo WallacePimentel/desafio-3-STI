@@ -10,12 +10,10 @@ import java.util.List;
 @Setter
 public class AlunoModel {
     private final String matriculaAluno;
-    private String codigoCurso;
     private List<MatriculaDisciplinaModel> disciplinasDoAluno;
 
-    public AlunoModel (String matriculaAluno, String codigoCurso) {
+    public AlunoModel (String matriculaAluno) {
         this.matriculaAluno = matriculaAluno;
-        this.codigoCurso = codigoCurso;
         this.disciplinasDoAluno = new ArrayList<>();
     }
 
