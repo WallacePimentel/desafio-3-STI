@@ -22,7 +22,7 @@ public class AlunoService {
         this.alunos.put(aluno.getMatriculaAluno(), aluno);
     }
 
-    private AlunoModel buscarAluno (String matriculaAluno) {
+    public AlunoModel buscarAluno (String matriculaAluno) {
         return this.alunos.get(matriculaAluno);
     }
 
