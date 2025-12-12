@@ -7,10 +7,12 @@ import lombok.Setter;
 @Setter
 public class DisciplinaModel {
     private final String codigoDisciplina;
+    private String codigoCurso;
     private int cargaHoraria;
 
-    public DisciplinaModel (String codigoDisciplina, int cargaHoraria) {
+    public DisciplinaModel (String codigoDisciplina, String codigoCurso, int cargaHoraria) {
         this.codigoDisciplina = codigoDisciplina;
+        this.codigoCurso = codigoCurso;
         this.cargaHoraria = cargaHoraria;
     }
 }
