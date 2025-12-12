@@ -12,7 +12,7 @@ import java.util.List;
 public class AlunoService {
 
     private final HashMap<String, AlunoModel> alunos = new HashMap<>();
-    private DisciplinaService disciplinaService;
+    private final DisciplinaService disciplinaService;
 
     public AlunoService(DisciplinaService disciplinaService){
         this.disciplinaService = disciplinaService;

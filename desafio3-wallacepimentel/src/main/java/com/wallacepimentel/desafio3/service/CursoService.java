@@ -13,7 +13,7 @@ import java.util.List;
 public class CursoService {
 
     private final HashMap<String, CursoModel> cursos = new HashMap<>();
-    private AlunoService alunoService;
+    private final AlunoService alunoService;
 
     public CursoService (AlunoService alunoService) {
         this.alunoService = alunoService;
